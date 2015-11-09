@@ -16,13 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designing patterns" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ty5-89-h9c">
+                                <rect key="frame" x="175" y="28" width="251" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singleton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZf-pe-Xq3">
+                                <rect key="frame" x="264" y="290" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ty5-89-h9c" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="1yu-g9-AuA"/>
+                            <constraint firstItem="jZf-pe-Xq3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hej-fC-Gcb"/>
+                            <constraint firstItem="jZf-pe-Xq3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Pjh-aJ-nvl"/>
+                            <constraint firstItem="ty5-89-h9c" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iFK-um-fWJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="144" y="408"/>
         </scene>
     </scenes>
 </document>

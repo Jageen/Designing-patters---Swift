@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMt-Vl-IM3">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CPx-fr-4az"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KnW-mv-CmX">
-                                <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="7Dw-dP-7Nd" detailTextLabel="kNn-cn-uQC" style="IBUITableViewCellStyleSubtitle" id="5ZL-Qc-xC3">
@@ -61,7 +61,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KnW-mv-CmX" firstAttribute="top" secondItem="YMt-Vl-IM3" secondAttribute="bottom" id="CYx-Ds-EX8"/>
-                            <constraint firstItem="YMt-Vl-IM3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Unr-Jx-xX6"/>
+                            <constraint firstItem="YMt-Vl-IM3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Unr-Jx-xX6"/>
                             <constraint firstItem="YMt-Vl-IM3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xco-bk-TMN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KnW-mv-CmX" secondAttribute="bottom" id="jaB-cw-L65"/>
                             <constraint firstAttribute="trailing" secondItem="YMt-Vl-IM3" secondAttribute="trailing" id="q99-1Z-sqz"/>
