@@ -16,12 +16,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMt-Vl-IM3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CPx-fr-4az"/>
+                                </constraints>
+                                <state key="normal" title="Create instance"/>
+                                <connections>
+                                    <action selector="btnCreateClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4n-7F-4zX"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KnW-mv-CmX">
+                                <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="7Dw-dP-7Nd" detailTextLabel="kNn-cn-uQC" style="IBUITableViewCellStyleSubtitle" id="5ZL-Qc-xC3">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ZL-Qc-xC3" id="3lG-H8-0ju">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Dw-dP-7Nd">
+                                                    <rect key="frame" x="15" y="18" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kNn-cn-uQC">
+                                                    <rect key="frame" x="15" y="38" width="41" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KnW-mv-CmX" firstAttribute="top" secondItem="YMt-Vl-IM3" secondAttribute="bottom" id="CYx-Ds-EX8"/>
+                            <constraint firstItem="YMt-Vl-IM3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Unr-Jx-xX6"/>
+                            <constraint firstItem="YMt-Vl-IM3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xco-bk-TMN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KnW-mv-CmX" secondAttribute="bottom" id="jaB-cw-L65"/>
+                            <constraint firstAttribute="trailing" secondItem="YMt-Vl-IM3" secondAttribute="trailing" id="q99-1Z-sqz"/>
+                            <constraint firstItem="KnW-mv-CmX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="r6g-GH-954"/>
+                            <constraint firstAttribute="trailing" secondItem="KnW-mv-CmX" secondAttribute="trailing" id="wws-eB-c12"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblView" destination="KnW-mv-CmX" id="5Eo-Hn-FpQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="412"/>
+            <point key="canvasLocation" x="246" y="397"/>
         </scene>
     </scenes>
 </document>
