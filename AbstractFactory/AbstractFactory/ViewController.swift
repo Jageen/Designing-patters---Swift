@@ -13,6 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let africa:ContinentFactory = AfricaFactory()
+        
+        var world:AnimalWorld = AnimalWorld(objContinent: africa)
+        world.runFoodChain()
+        
+        let america:ContinentFactory = AmericaFactory()
+        
+        world = AnimalWorld(objContinent: america)
+        world.runFoodChain()
     }
 
     override func didReceiveMemoryWarning() {
