@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Initialize sort list object and add dummy data
         objList = SortList()
         objList.list.addObject(5);
         objList.list.addObject(2);
@@ -28,7 +30,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func performSort(sender: AnyObject) {
-        objList.setSortStrategy(boubleSort())
+        
+        // Set strategy as quick sort
+        objList.setSortStrategy(quickSort())
+        
+        // uncomment below line to set strategy as bouble sort
+        // objList.setSortStrategy(boubleSort())
         objList.sort()
     }
 }
